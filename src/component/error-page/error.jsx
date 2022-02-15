@@ -14,7 +14,7 @@ function ErrorPage() {
         <h2>ERRO 404</h2> 
         <p>PÁGINA NÃO ENCONTRADA.</p>
       
-        <ButtonComponent onClick={() => navigate('/home')} adote>Homepage</ButtonComponent>
+        <ButtonComponent onClick={() => navigate('/dogs-house-app')} adote>Homepage</ButtonComponent>
       </div>
       
     </Error>

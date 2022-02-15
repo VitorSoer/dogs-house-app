@@ -12,7 +12,7 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route path='/home' element={<Home/>} />
+        <Route path='/dogs-house-app' element={<Home/>} />
         <Route path='/adote' element={<Adote/>} />
         <Route path='*' element={<ErrorPage />} />
       </Routes>

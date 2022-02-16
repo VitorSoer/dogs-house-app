@@ -5,10 +5,14 @@ import { DivContent, DivText } from '../infocards/styles/card-content';
 import { ButtonComponent } from '../button/button.styles';
 import { InfoWrapper } from './styles/info.styles';
 
-
+import {useNavigate} from 'react-router-dom';
 
 
 function Info() {
+
+
+  let navigate = useNavigate();
+
   return (
     <InfoWrapper>
       <CardStyle>
@@ -38,7 +42,7 @@ function Info() {
         <DivContent>
           <p>Visite uma Dog's House hoje mesmo, temos diversos pets esperando por um tutor para chamar de seu.</p>
         </DivContent>
-        <ButtonComponent adote>Encontre seu pet!</ButtonComponent>
+        <ButtonComponent onClick={() => navigate('/adote')} adote>Encontre seu pet!</ButtonComponent>
 
 
 

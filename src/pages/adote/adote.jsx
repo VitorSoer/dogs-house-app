@@ -8,17 +8,20 @@ import { AdoteWrapper, CardStyle } from './styles/adote.styles';
 import { ButtonComponent } from '../../component/button/button.styles'
 import { NavBar } from './styles/adote.nav.styles';
 
+import Skeleton from 'react-loading-skeleton'
+import 'react-loading-skeleton/dist/skeleton.css'
+
 class Adote extends React.Component {
     constructor(props) {
         super(props);
 
         this.state = {
-            cards: PETS[0].items
+            cards: PETS
         }
     }
 
-    BntChangeDogs = () => { this.setState({cards: PETS[0].items})};
-    BntChangeCats = () => { this.setState({cards: PETS[1].items})};
+    BntChangeDogs = () => { this.setState({cards: PETS.filter(item => {return item.tipo === 'canino'}) })};
+    BntChangeCats = () => { this.setState({cards: PETS.filter(item => {return item.tipo === 'felino'}) })};
 
     render() {
         const { cards } = this.state;
@@ -37,7 +40,7 @@ class Adote extends React.Component {
                     {
                         cards.map(({ id, name, estado, idade, peso, imageUrl }) => (
                             <CardStyle key={id}>
-                                <img alt='Pet Img' src={imageUrl}></img>
+                                <img alt='Pet Img' src={imageUrl || <Skeleton />}></img>
                                 <h1>{name}</h1>
 
                                 <div className='grid'>

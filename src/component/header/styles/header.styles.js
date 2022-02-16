@@ -2,6 +2,11 @@ import styled from "styled-components";
 
 export const HeaderContainer = styled.div`
     display: flex;
+
+    @media only screen and (max-width: 600px){
+    align-items: center;
+    justify-content: center;
+}
 `
 
 export const HeaderContent = styled.div`
@@ -24,6 +29,22 @@ export const HeaderContent = styled.div`
         font-size: 3.5rem;
         font-weight: 600;
     }
+
+    animation: moveDown 1s ease-out;
+
+    @keyframes moveDown {
+    0% {
+      opacity: 0;
+      transform: translateY(-5rem);
+    }
+    60% {
+      transform: translateY(0.25rem);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
 `
 
 export const TitleContainer = styled.div`
@@ -43,6 +64,7 @@ p{
 }
 
 @media only screen and (max-width: 768px){
+    font-size: 2.35rem;
     height: 45rem;
 }
 `
@@ -62,4 +84,20 @@ width: 39%;
 @media only screen and (max-width: 600px){
     display: none;
 }
+
+animation: moveUp 1s ease-out;
+
+@keyframes moveUp {
+    0% {
+      opacity: 0;
+      transform: translateY(5rem);
+    }
+    60% {
+      transform: translateY(-0.25rem);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
 `

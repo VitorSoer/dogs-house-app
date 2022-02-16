@@ -23,6 +23,9 @@ export const ButtonComponent = styled.button`
         box-shadow: 5px 5px #7027a0D2;
     }
 
+    @media only screen and (max-width: 1024px){
+        width: 100%;
+    }
   `}
 
   ${props => props.apadrinhe && css`

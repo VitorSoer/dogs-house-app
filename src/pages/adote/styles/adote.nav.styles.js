@@ -6,20 +6,13 @@ display: flex;
 align-items: center;
 justify-content: space-between;
 
-background: linear-gradient(20deg, #121212 50%, #7027a0 50%);
+background: #121212;
 color: #F5F5F5D6;
 padding: 0 5rem;
 font-size: 1.75rem;
 width: 100%;
-height: 8rem;
-border-radius: 15px ;
+height: 15rem;
 
-${props => props.different && css`
-    background: #7027a0;
-    height: 2.5rem;
-    margin-bottom: 3.5rem;
-    border-radius: 0 0 15px 15px;
-  `}
 
 ul{
     display: flex;

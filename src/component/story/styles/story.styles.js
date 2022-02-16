@@ -33,6 +33,7 @@ span{
 p{
     margin-bottom: 3.5rem;
 }
+
 @media only screen and (max-width: 768px){
     width: 100%;
     height: 40rem;
@@ -41,9 +42,11 @@ p{
     text-align: center;
     justify-content: center;
 }
+
 @media only screen and (max-width: 480px){
     height: 50rem;
     padding: 2.5rem;
+    font-size: 1.8rem;
 }
 `
 

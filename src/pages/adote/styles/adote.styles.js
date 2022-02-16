@@ -23,6 +23,13 @@ height: 40rem;
 width: 30rem;
 
 
+
+@media only screen and (max-width: 1024px){
+    height: 45rem;
+    width: 35rem;
+    font-size: 2.25rem;
+}
+
 img{
     
     height: 75%;
@@ -41,7 +48,13 @@ h1{
     font-size: 3.5rem;
     
     transform: translateY(-50%);
+
+    @media only screen and (max-width: 1024px){
+        font-size: 4rem;
+
+    }
 }
+
 
 .grid{
     display: grid;

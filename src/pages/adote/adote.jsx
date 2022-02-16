@@ -8,7 +8,6 @@ import { FaCat, FaDog, FaHome } from 'react-icons/fa';
 import { AdoteWrapper, CardStyle } from './styles/adote.styles';
 import { NavBar } from './styles/adote.nav.styles';
 import ModalBox from '../../component/modal/modal';
-import reactDom from 'react-dom';
 
 
 

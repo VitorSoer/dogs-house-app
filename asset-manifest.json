@@ -1,13 +1,10 @@
 {
   "files": {
-    "main.css": "/dogs-house-app/static/css/main.b2a3f954.css",
-    "main.js": "/dogs-house-app/static/js/main.120d18ee.js",
+    "main.js": "/dogs-house-app/static/js/main.e00b0dcb.js",
     "index.html": "/dogs-house-app/index.html",
-    "main.b2a3f954.css.map": "/dogs-house-app/static/css/main.b2a3f954.css.map",
-    "main.120d18ee.js.map": "/dogs-house-app/static/js/main.120d18ee.js.map"
+    "main.e00b0dcb.js.map": "/dogs-house-app/static/js/main.e00b0dcb.js.map"
   },
   "entrypoints": [
-    "static/css/main.b2a3f954.css",
-    "static/js/main.120d18ee.js"
+    "static/js/main.e00b0dcb.js"
   ]
 }

@@ -1,6 +1,6 @@
 import React from 'react'
 import { ButtonComponent } from '../button/button.styles';
-import { HeaderContainer, HeaderContent, PhotoContainer, TitleContainer, Logo  } from './styles/header.styles';
+import { HeaderContainer, HeaderContent, PhotoContainer, TitleContainer} from './styles/header.styles';
 
 
 

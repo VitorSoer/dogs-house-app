@@ -26,7 +26,7 @@ function Info() {
         <DivContent>
           <p>Todo o valor é revertido na compra de vacinas, brinquedos, medicamentos, atendimento veterinário e ração.</p>
         </DivContent>
-        <ButtonComponent apadrinhe>Vamos nessa!</ButtonComponent>
+        <ButtonComponent onClick={() => navigate('/adote')} apadrinhe>Vamos nessa!</ButtonComponent>
 
 
 
@@ -58,7 +58,7 @@ function Info() {
         <DivContent>
           <p>Milhões de animais estão sujeitos a maus-tratos, doenças, fome e atropelamentos nas ruas. Ajude-nos a Protegê-los.</p>
         </DivContent>
-        <ButtonComponent ajude>Ajude-nos!</ButtonComponent>
+        <ButtonComponent onClick={() => navigate('/adote')} ajude>Ajude-nos!</ButtonComponent>
 
 
 

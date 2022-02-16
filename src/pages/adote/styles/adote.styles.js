@@ -51,7 +51,6 @@ h1{
 
     @media only screen and (max-width: 1024px){
         font-size: 4rem;
-
     }
 }
 
@@ -77,6 +76,12 @@ h1{
         
         margin: 1rem 2rem;
         
+
+        @media only screen and (max-width: 378px){
+        flex-direction: column;
+        text-align: center;
+        margin: 1rem 0;
+    }
     }
 }
 `

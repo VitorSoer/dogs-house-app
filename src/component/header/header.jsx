@@ -1,7 +1,7 @@
 import React from 'react'
 import { ButtonComponent } from '../button/button.styles';
 import { HeaderContainer, HeaderContent, PhotoContainer, TitleContainer} from './styles/header.styles';
-
+import {Link} from 'react-scroll';
 
 
 function Header() {
@@ -14,7 +14,7 @@ function Header() {
                     <p>CANIL ESPECIALIZADO</p>
                 </TitleContainer>
 
-                <ButtonComponent>Veja Mais</ButtonComponent>
+                <Link to="feature" spy={true} smooth={true} offset={-150} duration={500}><ButtonComponent>Veja Mais</ButtonComponent></Link>
             </HeaderContent>
 
             <PhotoContainer />

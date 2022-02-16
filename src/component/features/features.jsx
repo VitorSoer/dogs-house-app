@@ -17,7 +17,7 @@ class Features extends React.Component {
         const { info } = this.state;
 
         return (
-            <FeaturesWrapper>
+            <FeaturesWrapper name='feature'>
                 {
                     info.map(({ id, title, text, icon }) => (
                         <FeaturesContainer key={id}>

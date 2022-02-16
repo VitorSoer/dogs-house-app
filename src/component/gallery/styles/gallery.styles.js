@@ -93,5 +93,9 @@ padding: 1.5rem;
         }
     }
 }
-        
+
+@media only screen and (max-width: 1024px){
+    grid-gap: 1rem;
+}
+
 `

@@ -24,6 +24,7 @@ div{
     width: 100%;
     height: 80vh;
 }
+
 p{
     font-size: 2rem;
     margin-bottom: 3.5rem;

@@ -24,6 +24,7 @@ export const FooterStyle = styled.div`
             flex-direction: column;
         }
     }
+
     li{
         
         list-style: none;
@@ -40,8 +41,6 @@ export const FooterStyle = styled.div`
             font-size: 1.5rem;
             margin: 2rem;
         }
-
-       
     }
      
 `

@@ -12,8 +12,9 @@ function Story() {
         <StoryWrapper>
             <StoryPhoto />
             <StoryContent>
-                <span>SATISFAÇÃO GARANTIDA</span>
+                
                 <h1>A melhor escolha que fizemos, incrível!</h1>
+                <span>SATISFAÇÃO GARANTIDA</span>
                 <p>Atendimento nota mil, equipe atenciosa e cuidadosa, animais felizes e saudáveis. Estamos super satisfeitos com o nosso cachorrinho.</p>
                 <ButtonComponent onClick={() => navigate('/adote')}> Encontre seu pet</ButtonComponent>
             </StoryContent>

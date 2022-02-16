@@ -3,7 +3,6 @@ import styled from "styled-components";
 export const GalleryStyle = styled.div`
 
 display: grid;
-    
 grid-template: repeat(7, 5vw) / repeat(8, 1fr);
 grid-gap: 1.5rem;
 padding: 1.5rem;

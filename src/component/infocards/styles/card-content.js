@@ -1,4 +1,4 @@
-import styled, {css}  from "styled-components";
+import styled, { css } from "styled-components";
 
 
 export const DivText = styled.div`
@@ -8,7 +8,7 @@ export const DivText = styled.div`
     flex-direction: column;
 
     h1{
-        font-size: 2.5rem
+        font-size: 2.75rem
     }
 
     h2{
@@ -26,24 +26,15 @@ export const DivText = styled.div`
         `}
     }
 
-    hr{
-        width: 100%;
-        margin-top: .65rem;
-    }
 `
 
 export const DivContent = styled.div`
 
 margin: 0 4rem;
 
-h2{
-    font-size: 1.6rem;
-    padding-bottom: .5rem;
-}
 p{
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     padding-bottom: .5rem;
-
 }
 
 `

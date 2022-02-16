@@ -15,10 +15,11 @@ margin-bottom: 5rem;
 
 export const StoryContent = styled.div`
 display: flex;
+justify-content: center;
 flex-direction: column;
-gap: 2rem;
+gap: .25rem;
 
-padding: 7.5rem;
+padding: 5rem;
 height: 50rem;
 width: 55%;
 color: #f5f5f5d6;
@@ -27,8 +28,11 @@ color: #f5f5f5d6;
 span{
     font-size: 1.75rem;
     color: rgba(0, 225, 255, 0.8);
+    margin-bottom: 2rem;
 }
-
+p{
+    margin-bottom: 3.5rem;
+}
 @media only screen and (max-width: 768px){
     width: 100%;
     height: 40rem;

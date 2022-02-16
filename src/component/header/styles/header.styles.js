@@ -2,24 +2,28 @@ import styled from "styled-components";
 
 export const HeaderContainer = styled.div`
     display: flex;
-
 `
 
 export const HeaderContent = styled.div`
     display: flex;
     flex-direction: column;
 
-
     background: #1A1B21;
     padding: 4.5rem 5rem;
     height: 90vh;
     width: 61%;
 
-    @media only screen and (max-width: 480px){
-    align-items: center;
+    @media only screen and (max-width: 600px){
+        align-items: center;
+        padding: 4.5rem 3rem;
         text-align: center;
-    width: 100%;
-}
+        width: 100%;
+    }
+
+    span{
+        font-size: 3.5rem;
+        font-weight: 600;
+    }
 `
 
 export const TitleContainer = styled.div`
@@ -39,7 +43,8 @@ p{
 }
 
 @media only screen and (max-width: 768px){
-    height: 40rem;
+    font-size: 2.35rem;
+    height: 45rem;
 }
 `
 
@@ -47,20 +52,15 @@ export const PhotoContainer = styled.div`
 
 background-image: linear-gradient(to right bottom,
     rgba(112,39,160, .6),
-     rgba(112,39,160, 1)),
-      url('https://images.pexels.com/photos/4588019/pexels-photo-4588019.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500');
+    rgba(112,39,160, 1)),
+    url('https://images.pexels.com/photos/4588019/pexels-photo-4588019.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500');
 background-position: center;
 background-size: cover;
 
 height: 90vh;
 width: 39%;
 
-@media only screen and (max-width: 480px){
+@media only screen and (max-width: 600px){
     display: none;
 }
-`
-
-export const Logo = styled.h1`
-    font-size: 3.5rem;
-
 `

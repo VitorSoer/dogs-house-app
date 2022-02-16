@@ -8,7 +8,7 @@ function Header() {
     return (
         <HeaderContainer>
             <HeaderContent>
-                <Logo>DOG'S HOUSE</Logo>
+                <span>DOG'S HOUSE</span>
                 <TitleContainer>
                     <h1>Adoção, castração e treinamento para o seu pet</h1>
                     <p>CANIL ESPECIALIZADO</p>

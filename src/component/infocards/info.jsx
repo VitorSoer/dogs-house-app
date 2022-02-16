@@ -20,7 +20,7 @@ function Info() {
         </DivText>
 
         <DivContent>
-          <p>Você escolhe qual pet quer ajudar e se compromete a doar mensalmente. Todo o valor é revertido na compra de vacinas, medicamentos, atendimento veterinário e ração.</p>
+          <p>Todo o valor é revertido na compra de vacinas, brinquedos, medicamentos, atendimento veterinário e ração.</p>
         </DivContent>
         <ButtonComponent apadrinhe>Vamos nessa!</ButtonComponent>
 
@@ -36,7 +36,7 @@ function Info() {
         </DivText>
 
         <DivContent>
-          <p>Visite uma Dog's House dedicada à adoção e encontre o seu xodó. Lá você irá conhecer nossos colaboradores e eles irão lhe ajudar nessa busca por um pet para ser seu novo amigo.</p>
+          <p>Visite uma Dog's House hoje mesmo, temos diversos pets esperando por um tutor para chamar de seu.</p>
         </DivContent>
         <ButtonComponent adote>Encontre seu pet!</ButtonComponent>
 
@@ -52,7 +52,7 @@ function Info() {
         </DivText>
 
         <DivContent>
-          <p>Milhões de animais estão sujeitos a maus-tratos, doenças, fome e atropelamentos nas ruas. Ajude-nos a Protegê-los. Junte-se a nós na causa. Pelo Bem Estar Animal.</p>
+          <p>Milhões de animais estão sujeitos a maus-tratos, doenças, fome e atropelamentos nas ruas. Ajude-nos a Protegê-los.</p>
         </DivContent>
         <ButtonComponent ajude>Ajude-nos!</ButtonComponent>
 

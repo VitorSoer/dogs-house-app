@@ -14,7 +14,7 @@ function App() {
     <ScrollToTop>
       <Routes>
         <Route path='/dogs-house-app' element={<Home/>} />
-        <Route path='/adote' element={<Adote/>} />
+        <Route path='/dogs-house-app/adote' element={<Adote/>} />
         <Route path='*' element={<ErrorPage />} />
       </Routes>
       <Footer/>

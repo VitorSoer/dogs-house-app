@@ -26,7 +26,7 @@ function Info() {
         <DivContent>
           <p>Todo o valor é revertido na compra de vacinas, brinquedos, medicamentos, atendimento veterinário e ração.</p>
         </DivContent>
-        <ButtonComponent onClick={() => navigate('/adote')} apadrinhe>Vamos nessa!</ButtonComponent>
+        <ButtonComponent onClick={() => navigate('/dogs-house-app/adote')} apadrinhe>Vamos nessa!</ButtonComponent>
 
 
 
@@ -42,7 +42,7 @@ function Info() {
         <DivContent>
           <p>Visite uma Dog's House hoje mesmo, temos diversos pets esperando por um tutor para chamar de seu.</p>
         </DivContent>
-        <ButtonComponent onClick={() => navigate('/adote')} adote>Encontre seu pet!</ButtonComponent>
+        <ButtonComponent onClick={() => navigate('/dogs-house-app/adote')} adote>Encontre seu pet!</ButtonComponent>
 
 
 
@@ -58,7 +58,7 @@ function Info() {
         <DivContent>
           <p>Milhões de animais estão sujeitos a maus-tratos, doenças, fome e atropelamentos nas ruas. Ajude-nos a Protegê-los.</p>
         </DivContent>
-        <ButtonComponent onClick={() => navigate('/adote')} ajude>Ajude-nos!</ButtonComponent>
+        <ButtonComponent onClick={() => navigate('/dogs-house-app/adote')} ajude>Ajude-nos!</ButtonComponent>
 
 
 

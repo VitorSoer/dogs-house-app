@@ -43,7 +43,6 @@ p{
 }
 
 @media only screen and (max-width: 768px){
-    font-size: 2.35rem;
     height: 45rem;
 }
 `

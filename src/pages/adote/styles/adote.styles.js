@@ -78,10 +78,9 @@ h1{
         
 
         @media only screen and (max-width: 378px){
-        flex-direction: column;
         text-align: center;
         margin: 1rem 0;
-    }
+        }
     }
 }
 `

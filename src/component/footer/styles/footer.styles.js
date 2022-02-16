@@ -42,5 +42,5 @@ export const FooterStyle = styled.div`
             margin: 2rem;
         }
     }
-     
+
 `

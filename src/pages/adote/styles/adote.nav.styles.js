@@ -21,7 +21,6 @@ div{
 
     @media only screen and (max-width: 768px){
     font-size: 2.5rem;
-    margin-top: 1rem;
 
     .link{
         color: #F5F5F5D6;

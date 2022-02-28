@@ -17,7 +17,7 @@ export const ModalButton = styled.button`
 :hover {
     cursor: pointer;
     filter: brightness(120%);
-    box-shadow: 5px 5px #7027a0D2;
+    box-shadow: 5px 5px var(--dark-purple);
     
 }
 `
@@ -32,7 +32,7 @@ position: absolute;
 top: 12px;
 right: 12px;
 
-background: #7027a0D2;
+background: var(--dark-purple);
 color: #f5f5f5d6;
 padding: .5rem;
 border-radius: 50%;

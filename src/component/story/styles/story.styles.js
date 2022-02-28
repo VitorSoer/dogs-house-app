@@ -22,12 +22,12 @@ gap: .25rem;
 padding: 5rem;
 height: 50rem;
 width: 55%;
-color: #f5f5f5d6;
+color: var(--gelid-white);
 
 
 span{
     font-size: 1.75rem;
-    color: rgba(0, 225, 255, 0.8);
+    color: var(--light-blue);
     margin-bottom: 2rem;
 }
 p{

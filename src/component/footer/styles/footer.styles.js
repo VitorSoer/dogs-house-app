@@ -5,9 +5,9 @@ export const FooterStyle = styled.div`
     align-items: center;
     justify-content: center;
 
-    background: #121212;
+    background: var(--black);
     font-size: 1.8rem;
-    color: #F5F5F5D6;
+    color: var(--gelid-white);
     height: 15rem;
     width: 100%;
 
@@ -32,7 +32,7 @@ export const FooterStyle = styled.div`
 
         :hover{
             cursor: pointer;
-            color: rgba(0, 225, 255);
+            color: var(--light-blue);
             transform: translateY(-2px);
         }
 

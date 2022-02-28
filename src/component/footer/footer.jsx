@@ -7,12 +7,12 @@ function Footer() {
   let navigate = useNavigate();
   return (
     <FooterStyle>
-        <ul>
-            <li onClick={() => navigate('/adote')}>ENCONTRE SEU PET</li>
-            <li>APADRINHE UM PET</li>
-            <li>NOSSAS UNIDADES</li>
-            <li>FALE CONOSCO</li>
-        </ul>
+      <ul>
+        <li onClick={() => navigate('/dogs-house-app/')}>HOMEPAGE</li>
+        <li onClick={() => navigate('/dogs-house-app/adote')}>ENCONTRE SEU PET</li>
+        <li onClick={() => navigate('/dogs-house-app/apadrinhe')}>APADRINHE UM PET</li>
+        <li onClick={() => navigate('/dogs-house-app/contato')}>FALE CONOSCO</li>
+      </ul>
     </FooterStyle>
   )
 }

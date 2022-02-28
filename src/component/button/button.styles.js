@@ -4,8 +4,8 @@ export const ButtonComponent = styled.button`
     
     font-size: 1.75rem;
     padding: 1.5rem 6rem;
-    background-color: #7027a0;
-    color: #fff;
+    background-color: var(--purple);
+    color: var(--white);
     border: none;
     
     width: 30rem;
@@ -20,7 +20,7 @@ export const ButtonComponent = styled.button`
     &&:hover {
         cursor: pointer;
         filter: brightness(120%);
-        box-shadow: 5px 5px #7027a0D2;
+        box-shadow: 5px 5px var(--purple);
     }
 
     @media only screen and (max-width: 1024px){
@@ -29,7 +29,7 @@ export const ButtonComponent = styled.button`
   `}
 
   ${props => props.apadrinhe && css`
-    background: #005682;
+    background: var(--blue);
     color: white;
 
     &&:hover {
@@ -41,7 +41,7 @@ export const ButtonComponent = styled.button`
   `}
   
   ${props => props.ajude && css`
-    background: #00A467;
+    background: var(--green);
     color: white;
 
     &&:hover {
@@ -53,7 +53,7 @@ export const ButtonComponent = styled.button`
   `}
 
   ${props => props.adote && css`
-    background: #B60121;
+    background: var(--red);
     color: white;
 
     &&:hover {
@@ -64,11 +64,9 @@ export const ButtonComponent = styled.button`
 
   `}
   
- 
     :hover {
         cursor: pointer;
         filter: brightness(120%);
-        box-shadow: 5px 5px rgba(0, 225, 255, 0.8);
+        box-shadow: 5px 5px var(--light-blue);
     }
-
 `

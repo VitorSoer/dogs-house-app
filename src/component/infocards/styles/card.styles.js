@@ -10,7 +10,7 @@ export const CardStyle = styled.div`
 
     box-shadow: 5px 15px 15px rgba(0,0,0, .5);
     font-size: 2rem;
-    color: #F5F5F5D6;
+    color: var(--gelid-white);
     width: 35rem;
     height: 47.5rem;
 

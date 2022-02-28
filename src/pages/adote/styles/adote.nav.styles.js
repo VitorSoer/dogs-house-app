@@ -7,7 +7,7 @@ align-items: center;
 justify-content: space-between;
 margin-top: -2rem;
 background: #121212;
-color: #F5F5F5D6;
+color: var(--gelid-white);
 padding: 0 5rem;
 font-size: 1.75rem;
 width: 100%;
@@ -23,7 +23,7 @@ div{
     font-size: 2.5rem;
 
     .link{
-        color: #F5F5F5D6;
+        color: var(--gelid-white);
     }
 }
     
@@ -35,7 +35,7 @@ div{
         justify-content: center;
 
         cursor: pointer;
-        color: #F5F5F5D6;
+        color: var(--gelid-white);
         list-style: none;
         margin: 0 1.75rem;
         transition: all .3s;

@@ -9,6 +9,7 @@ gap: 7.5rem;
 flex-wrap: wrap;
 
 margin-bottom: 7.5rem;
+min-height: 80rem;
 `
 
 export const CardStyle = styled.div`
@@ -40,8 +41,8 @@ img{
 }
 
 h1{
-    background: #7027a0;
-    color: #F5F5F5D6;
+    background: var(--purple);
+    color: var(--gelid-white);
 
     width: 80%;
     justify-self: center;

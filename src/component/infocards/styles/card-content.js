@@ -6,6 +6,7 @@ export const DivText = styled.div`
     display: flex;
     align-items: center;
     flex-direction: column;
+    -webkit-transform: translateZ(0px);
 
     h1{
         font-size: 2.75rem
@@ -14,15 +15,14 @@ export const DivText = styled.div`
     h2{
         font-size: 1.5rem;
         font-weight: 400;
-        color: rgba(0, 225, 255, .75);
+        color: var(--light-blue);
 
         ${props => props.ajude && css`
-            color: #00A467;
+            color: var(--green);
         `}
         
         ${props => props.adote && css`
-            color: #B60121;
-
+            color: var(--red);
         `}
     }
 

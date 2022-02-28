@@ -11,7 +11,7 @@ label{
     margin-top: 1.5rem;
 }
 input{
-    border: 1px solid #7027a0;
+    border: 1px solid var(--purple);
     padding: 1rem;
     width: 100%;
 
@@ -22,8 +22,8 @@ input{
 
 .submit-input{
     font-size: 1.5rem;
-    color: #f5f5f5d6;
+    color: var(--gelid-white);
     margin-top: 2.5rem;
-    background: #7027a0;
+    background: var(--purple);
 }
 `

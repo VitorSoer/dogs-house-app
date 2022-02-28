@@ -30,6 +30,12 @@ class Form extends React.Component {
         Seu nome : ${name}
         Seu email : ${email}
         `)
+
+        this.setState({
+            pet: '',
+            name: '',
+            email: ''
+          });
     }
 
     render() {
@@ -41,8 +47,9 @@ class Form extends React.Component {
                         <input
                             name='pet'
                             placeholder='Nome do pet'
-                            value={this.state.pet}
+                            value={this.state.pet || ''}
                             onChange={this.handleChange}
+                            required
                         />
                     </div>
 
@@ -51,8 +58,9 @@ class Form extends React.Component {
                         <input
                             name='name'
                             placeholder='Nome'
-                            value={this.state.name}
+                            value={this.state.name || ''}
                             onChange={this.handleChange}
+                            required
                         />
                     </div>
 
@@ -62,8 +70,9 @@ class Form extends React.Component {
                             type='email'
                             name='email'
                             placeholder='Email'
-                            value={this.state.email}
+                            value={this.state.email || ''}
                             onChange={this.handleChange}
+                            required
                         />
                     </div>
 

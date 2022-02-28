@@ -54,12 +54,12 @@ export const TitleContainer = styled.div`
     height: 35rem;
 
     font-size: 2.5rem;
-    color: #F5F5F5D6;
+    color: var(--gelid-white);
 
 p{
     font-size: 1.8rem;
     font-weight: 600;
-    color: rgba(0, 225, 255, 0.8);
+    color: var(--light-blue);
     
 }
 

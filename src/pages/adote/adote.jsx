@@ -1,8 +1,8 @@
-import React from 'react';
-import PETS from '../../data/card.data';
+import React, { useEffect, useState } from 'react';
+import axios from 'axios';
 import { Link } from 'react-router-dom';
 
-import { VscHome,VscHistory, VscLaw, VscCreditCard } from "react-icons/vsc";
+import { VscHome, VscHistory, VscLaw, VscCreditCard } from "react-icons/vsc";
 import { FaCat, FaDog, FaHome } from 'react-icons/fa';
 
 import { AdoteWrapper, CardStyle } from './styles/adote.styles';
@@ -11,61 +11,60 @@ import ModalBox from '../../component/modal/modal';
 
 
 
-class Adote extends React.Component {
-    constructor(props) {
-        super(props);
+function Adote() {
+    const [data, setData] = useState([]);
+    const [query, setQuery] = useState("");
+    const [filteredPets, setFilteredPets] = useState([]);
 
-        this.state = {
-            cards: PETS
-        }
-    }
+    useEffect(() => {
+        axios.get(`https://dogs-house-data.herokuapp.com/pets?name=${query}`)
+            .then((res) => {
+                setData(res.data)
+            })
+            .catch(err => {
+                console.log(err)
+            });
+    }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
-    BntChangeDogs = () => { this.setState({cards: PETS.filter(item => {return item.tipo === 'canino'}) })};
-    BntChangeCats = () => { this.setState({cards: PETS.filter(item => {return item.tipo === 'felino'}) })};
+    useEffect(() => {
+        setFilteredPets(
+            data.filter(pet => {
+                return pet.name.toLowerCase().includes(query.toLowerCase());
+            })
+        )
+    }, [query, data])
 
-    render() {
-        const { cards } = this.state;
-    
-        return (
-            <div>
-                <NavBar>
-                    <h1>Dog's House</h1>
-                    <div>
-                        <Link className='link' style={{ color: '#f5f5f5d6', display: 'flex', margin:' 1.5rem' }} to="/dogs-house-app"><FaHome /></Link>
-                        <span onClick={this.BntChangeDogs}><FaDog/></span>
-                        <span onClick={this.BntChangeCats}><FaCat/></span>
-                    </div>
-                </NavBar>
-                <AdoteWrapper>
-                    {
-                        cards.map(({ id, name, estado, idade, peso, imageUrl }) => (
-                            <CardStyle key={id}>
-                                <img alt='Pet Img' src={imageUrl}></img>
-                                <h1>{name}</h1>
+    return (
+        <div>
+            <NavBar>
+                <h1>Dog's House</h1>
+                <input className='search' value={query} placeholder='Pesquise um nome...' onChange={(e) => setQuery(e.target.value)} />
+                <div>
+                    <Link className='link' style={{ color: '#f5f5f5d6', display: 'flex', margin: ' 1.5rem' }} to="/dogs-house-app"><FaHome /></Link>
+                    <span><FaDog /></span>
+                    <span><FaCat /></span>
+                </div>
+            </NavBar>
+            <AdoteWrapper>
+                {
+                    filteredPets.map(({ _id, name, estado, idade, peso, url }) => (
+                        <CardStyle key={_id}>
+                            <img alt='Pet Img' src={url}></img>
+                            <h1>{name}</h1>
 
-                                <div className='grid'>
-                                    <span><VscHome /> {estado}</span>
-                                    <span><VscHistory /> {idade}</span>
-                                    <span><VscLaw /> {peso}</span>
-                                    <span><VscCreditCard /> Apadrinhe!</span>
-                                </div>
-                                <ModalBox/>
-                            </CardStyle>
-
-                        ))
-
-                    }
-                </AdoteWrapper>
-
-                
-            </div>
-        );
-
-    }
-
-
+                            <div className='grid'>
+                                <span><VscHome /> {estado}</span>
+                                <span><VscHistory /> {idade}</span>
+                                <span><VscLaw /> {peso}</span>
+                                <span><VscCreditCard /> Apadrinhe!</span>
+                            </div>
+                            <ModalBox />
+                        </CardStyle>
+                    ))
+                }
+            </AdoteWrapper>
+        </div>
+    );
 }
-
-
 
 export default Adote

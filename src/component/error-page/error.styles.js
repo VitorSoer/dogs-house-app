@@ -6,7 +6,7 @@ display: flex;
 justify-content: center;
 align-items: center;
 font-size: 5rem;
-color: #F5F5F5D6;
+color: var(--gelid-white);
 font-weight: 600;
 margin-bottom: 2rem;
 
@@ -19,7 +19,7 @@ div{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background: #121212;
+    background: var(--black);
     
     width: 100%;
     height: 80vh;

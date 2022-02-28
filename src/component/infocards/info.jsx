@@ -26,7 +26,7 @@ function Info() {
         <DivContent>
           <p>Todo o valor é revertido na compra de vacinas, brinquedos, medicamentos, atendimento veterinário e ração.</p>
         </DivContent>
-        <ButtonComponent onClick={() => navigate('/dogs-house-app/adote')} apadrinhe>Vamos nessa!</ButtonComponent>
+        <ButtonComponent onClick={() => navigate('/dogs-house-app/apadrinhe')} apadrinhe>Vamos nessa!</ButtonComponent>
 
 
 

@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.js": "/dogs-house-app/static/js/main.18356500.js",
+    "main.js": "/dogs-house-app/static/js/main.21b2ba80.js",
     "index.html": "/dogs-house-app/index.html",
-    "main.18356500.js.map": "/dogs-house-app/static/js/main.18356500.js.map"
+    "main.21b2ba80.js.map": "/dogs-house-app/static/js/main.21b2ba80.js.map"
   },
   "entrypoints": [
-    "static/js/main.18356500.js"
+    "static/js/main.21b2ba80.js"
   ]
 }

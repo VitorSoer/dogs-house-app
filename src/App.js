@@ -10,7 +10,6 @@ import Footer from './component/footer/footer';
 import Apadrinhe from './pages/apadrinhe/apadrinhe';
 import Contato from './pages/contato/contato';
 
-
 function App() {
   return (
     

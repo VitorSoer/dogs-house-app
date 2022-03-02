@@ -2,10 +2,16 @@ import styled from "styled-components";
 
 export const HeaderContainer = styled.div`
     display: flex;
+    border-radius: 10px;
+    overflow: hidden;
 
     @media only screen and (max-width: 600px){
     align-items: center;
     justify-content: center;
+
+    @media only screen and (max-width: 768px) {
+            border-radius: 0;
+    }
 }
 `
 

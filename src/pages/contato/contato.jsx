@@ -1,14 +1,13 @@
 import React from 'react'
 import Form from '../../component/form/form';
 import { ContatoWrapper } from './styles/contato.styles';
-
-import { FaGithubAlt } from "react-icons/fa";
-import { FaLinkedin } from "react-icons/fa";
-import { FaWhatsapp } from "react-icons/fa";
+import Navbar from '../../component/navbar/navbar';
+import { FaGithubAlt, FaLinkedin, FaWhatsapp  } from "react-icons/fa";
 
 function Contato() {
     return (
         <div>
+        <Navbar/>
             <ContatoWrapper>
                 <div>
                     <h2>Quer adotar um pet?</h2>

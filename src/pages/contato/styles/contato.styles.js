@@ -11,8 +11,9 @@ export const ContatoWrapper = styled.div`
     padding: 5rem;
     height: 60rem;
 
-    margin-bottom: 2rem;
+    margin: 2rem 0;
 
+    border-radius: 15px;
     h2{
         font-size: 3.75rem;
         color: var(--gelid-white);
@@ -42,9 +43,13 @@ export const ContatoWrapper = styled.div`
             transition: all .3s;
 
             :hover{
-                color: var(--light-blue);
+                color: var(--green);
             }
         }
     }
+
+    @media only screen and (max-width: 768px) {
+            border-radius: 0;
+        }
 
 `

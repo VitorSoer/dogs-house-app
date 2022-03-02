@@ -5,10 +5,12 @@ display: flex;
 align-items: center;
 justify-content: space-around;
 gap: 5rem;
+
+border-radius: 10px;
 padding: 0 5rem;
 
 background: var(--black);
-margin-bottom: 2rem;
+margin: 2rem 0;
 height: 60rem;
 
 
@@ -33,6 +35,24 @@ div{
             font-size: 1.75rem;
         }
     }
+
+    a{
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        background: var(--purple);
+        color: var(--gelid-white);
+        border-radius: 10px;
+
+        width: 25rem;
+        height: 5rem;
+
+        :hover{
+            filter: brightness(115%);
+        }
+    }
 }
 
 @media only screen and (max-width: 768px){
@@ -40,6 +60,7 @@ div{
     align-items: center;
     text-align: center;
     padding: 3.75rem;
+    border-radius: 0;
 
     div{
         width: 100%;     

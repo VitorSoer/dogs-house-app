@@ -11,6 +11,12 @@ export const FooterStyle = styled.div`
     height: 15rem;
     width: 100%;
 
+    border-radius: 10px;
+
+    @media only screen and (max-width: 768px){
+        border-radius: 0;
+    }
+
     @media only screen and (max-width: 480px){
         height: 30rem;
     }

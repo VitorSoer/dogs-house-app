@@ -23,8 +23,6 @@ cursor: pointer;
 height: 40rem;
 width: 30rem;
 
-
-
 @media only screen and (max-width: 1024px){
     height: 45rem;
     width: 35rem;
@@ -38,6 +36,7 @@ img{
 
     object-position: center;
     object-fit: cover;
+    border-radius: 5px;
 }
 
 h1{
@@ -47,6 +46,7 @@ h1{
     width: 80%;
     justify-self: center;
     font-size: 3.5rem;
+    border-radius: 10px;
     
     transform: translateY(-50%);
 
@@ -71,17 +71,41 @@ h1{
     span{
         display: flex;
         align-items:center;
-
+        margin: 1rem 2rem;
         gap: 1rem;
         width: 100%;
-        
-        margin: 1rem 2rem;
-        
-
+    
         @media only screen and (max-width: 378px){
         text-align: center;
         margin: 1rem 0;
         }
     }
 }
+`
+export const SearchStyle = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    height: 5.5rem;
+
+    input{
+        border: 1px solid var(--purple);
+        border-radius: 5px;
+        height: 3.25rem;
+        width: 30rem;
+        margin: 0 1.5rem;
+        text-align: center;
+    box-shadow: 5px 5px 5px rgba(0,0,0,.2);
+        
+
+        :focus{
+            outline: none;
+        }
+
+        @media only screen and (max-width: 324px) {
+            width: 25rem;
+        }
+    }
+
 `

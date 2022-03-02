@@ -1,12 +1,13 @@
 import styled from "styled-components";
 
+
 export const ModalButton = styled.button`
     font-size: 1.75rem;
     padding: 1.5rem 6rem;
     background: #1A1B21;
     color: #fff;
     border: none;
-    
+    border-radius: 10px;
     width: 30rem;
     height: 5rem;
     
@@ -32,8 +33,8 @@ position: absolute;
 top: 12px;
 right: 12px;
 
-background: var(--dark-purple);
-color: #f5f5f5d6;
+background: var(--light-blue);
+color: var(--gelid-white);
 padding: .5rem;
 border-radius: 50%;
 border: none;

@@ -9,53 +9,43 @@ margin-top: -2rem;
 background: #121212;
 color: var(--gelid-white);
 padding: 0 5rem;
-font-size: 1.75rem;
+font-size: 2rem;
 width: 100%;
 height: 10rem;
+border-radius: 10px;
 
+h2:hover{
+    transition: all .3s;
+    cursor: pointer;
+    color: var(--green);
+}
 
 div{
     display: flex;
     align-items: center;
+    justify-content: center;
+    gap: 2.5rem;
     font-size: 3rem;
 
-    @media only screen and (max-width: 768px){
-    font-size: 2.5rem;
-
     .link{
-        color: var(--gelid-white);
-    }
-}
-    
-}
-
-    span{
-
         display: flex;
-        justify-content: center;
-
-        cursor: pointer;
         color: var(--gelid-white);
-        list-style: none;
-        margin: 0 1.75rem;
         transition: all .3s;
 
         :hover{
-            color: orange;
+            color: var(--red);
         }
-
-        @media only screen and (max-width: 1024px){
-            margin: 0 1rem;
-            
+    }
+    
+    @media only screen and (max-width: 768px){
+        font-size: 2.5rem;
+    }
 }
-}
-
 
 @media only screen and (max-width: 768px){
-    font-size: 1.2rem;
+    font-size: 1.75rem;
+    border-radius: 0;
     padding: 0 3rem;
     margin: 0;
 }
-
-
 `

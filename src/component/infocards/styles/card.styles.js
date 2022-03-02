@@ -7,8 +7,11 @@ export const CardStyle = styled.div`
     flex-direction: column;
     text-align: center;
     gap: 2rem;
+    border-radius: 10px;
 
-    box-shadow: 5px 15px 15px rgba(0,0,0, .5);
+    box-shadow: 5px 15px 15px rgba(0,0,0, .325);
+    overflow: hidden;
+
     font-size: 2rem;
     color: var(--gelid-white);
     width: 35rem;

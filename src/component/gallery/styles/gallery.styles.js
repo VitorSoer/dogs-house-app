@@ -7,6 +7,7 @@ grid-template: repeat(7, 5vw) / repeat(8, 1fr);
 grid-gap: 1.5rem;
 padding: 1.5rem;
 
+
 .p-1 {
     grid-row: 1 / span 2;
     grid-column: 1 / span 2;
@@ -79,6 +80,8 @@ padding: 1.5rem;
 
 .image{
     cursor: pointer;
+    overflow: hidden;
+    border-radius: 5px;
     overflow: hidden;
 
     img {

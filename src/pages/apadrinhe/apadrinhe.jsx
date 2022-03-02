@@ -1,23 +1,21 @@
 import React from 'react'
-import PaypalCheckout from '../../component/paypal/paypalCreateButton';
+import Navbar from '../../component/navbar/navbar';
 import { ApadrinheWrapper, ImageApadrinhe } from './styles/apanhinhe.styles';
 
 const Apadrinhe = () => {
-  const product = {
-    description: 'Ajude-nos a continuar!',
-    price: '50'
-  }
-
   return (
     <div>
+    <Navbar/>
       <ApadrinheWrapper>
         <ImageApadrinhe />
         <div>
           <h2>Apadrinhe um pet!</h2>
           <span>Agora que você entende a importância deste ato de solidariedade, faça a sua parte. Sua doação pode salvar diversos pets e também nos ajuda a continuar.</span>
-          <PaypalCheckout product={product} />
+        <a target='_blank' rel='noreferrer' href="https://www.linkedin.com/in/vitorsoer/">Ajude nossa causa</a>
         </div>
+        
       </ApadrinheWrapper>
+      
     </div>
   );
 }

@@ -6,9 +6,13 @@ display: flex;
 align-items: center;
 background: #1A1B21;
 margin-bottom: 5rem;
+border-radius: 10px;
+overflow: hidden;
+
 
 @media only screen and (max-width: 768px){
       flex-direction: column;
+      border-radius: 0;
     }
 
 `

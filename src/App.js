@@ -3,7 +3,6 @@ import Home from './pages/home/home';
 import Adote from './pages/adote/adote';
 import ErrorPage from './component/error-page/error';
 import ScrollToTop from './scrollToTop/ScrollToTop';
-import {PayPalScriptProvider} from '@paypal/react-paypal-js';
 
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Footer from './component/footer/footer';
@@ -14,7 +13,6 @@ function App() {
   return (
     
     <Router>
-    <PayPalScriptProvider options={{"client-id": process.env.REACT_APP_PAYPAL_CLIENT_ID , currency: "BRL"} }>
     <ScrollToTop>
       <Routes>
         <Route path='/dogs-house-app' element={<Home/>} />
@@ -25,7 +23,6 @@ function App() {
       </Routes>
       <Footer/>
       </ScrollToTop>
-      </PayPalScriptProvider>
       <GlobalStyle />
       
     </Router>

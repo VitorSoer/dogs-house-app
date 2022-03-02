@@ -7,7 +7,8 @@ export const ButtonComponent = styled.button`
     background-color: var(--purple);
     color: var(--white);
     border: none;
-    
+    border-radius: 10px;
+
     width: 30rem;
     height: 5rem;
     

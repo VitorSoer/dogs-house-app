@@ -1,32 +1,30 @@
-import React from 'react'
-import GALLERY from '../../data/gallery.data';
-import { GalleryStyle } from './styles/gallery.styles'
+import React, { useEffect, useState } from "react";
+import axios from "axios";
+import { GalleryStyle } from "./styles/gallery.styles";
 
-class Gallery extends React.Component {
-    constructor(props) {
-        super(props);
+function Gallery() {
+  const [photos, setPhotos] = useState([]);
 
-        this.state = {
-            photos: GALLERY
-        }
-    }
+  useEffect(() => {
+    axios
+      .get(`https://dogs-house-data.herokuapp.com/photos`)
+      .then((res) => {
+        setPhotos(res.data);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  }, []);
 
-    render() {
-        const { photos } = this.state;
-
-        return (
-
-            <GalleryStyle>
-                {
-                    photos.map(({ id, url }) => (
-                        <div key={id} className={`p-${id} image`}>
-                            <img alt='gallery photos' src={url} />
-                        </div>
-                    ))
-                }
-            </GalleryStyle>
-        )
-    }
+  return (
+    <GalleryStyle>
+      {photos.map(({ _id, url }, i) => (
+        <div key={_id} className={`p-${i + 1} image`}>
+          <img alt="gallery photos" src={url} />
+        </div>
+      ))}
+    </GalleryStyle>
+  );
 }
 
-export default Gallery
+export default Gallery;

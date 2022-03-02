@@ -1,4 +1,4 @@
-import GlobalStyle from "./global-styles/global.ts";
+import GlobalStyle from "./global-styles/global";
 import Home from "./pages/home/home";
 import Adote from "./pages/adote/adote";
 import ErrorPage from "./component/error-page/error";

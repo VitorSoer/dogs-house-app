@@ -1,10 +1,8 @@
 # Dog's House | React e Styled Components 👩‍🚀
-## 🤚 Em produção... 🛑 
 
 <img width="750rem" src="https://github.com/VitorSoer/dogs-house-app/blob/master/public/assets/dogs.gif">
 
 >Aplicação criada para fins expositivos, produto fictício, utilizado apenas para estudo.
->App em produção, ainda em fase de implementação.
 
 [![SCREEN](https://img.shields.io/badge/Preview_FullPage%20-%23323330.svg?&style=for-the-badge&logo=perfil&logoColor=black&color=6aa4f2)](https://github.com/VitorSoer/dogs-house-app/blob/master/public/assets/dogs-preview.png)
 [![DEMO](https://img.shields.io/badge/Veja_a_Demo_Aqui%20-%23323330.svg?&style=for-the-badge&logo=perfil&logoColor=black&color=FF0080)](https://vitorsoer.github.io/dogs-house-app/)
